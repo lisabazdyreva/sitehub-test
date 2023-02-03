@@ -1,29 +1,630 @@
 <!doctype html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Page - поставщик хозйяственных и медицинских товаров </title>
 
-  <link rel="stylesheet" href="public/normalize.css">
-  <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="public/css/normalize.css">
+  <link rel="stylesheet" href="public/css/style.css">
 
   <script src="src/script.js" defer></script>
   <!--  favicon-->
 </head>
-<body>
-  <header>
-    header
+<body class="page__body">
+  <header class="header page__header">
+    <div class="wrapper header-info header__row">
+
+      <div class="logo header-info__logo">
+        <a class="logo-link logo-wrapper__link" href="#">
+          <img
+            class="logo-link__img"
+            width="160"
+            height="47"
+            alt="Логотип интернет-магазин Page"
+            src="./public/img/logo.svg"
+          >
+        </a>
+        <h1 class="title-main logo-wrapper__title-main">Надежный поставщик хозяйственных и медицинских товаров</h1>
+      </div>
+
+      <div class="contacts header-info__contacts" style="display: none">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <img class="contacts__icon" width="45" height="45" alt="" src="">
+            Санкт-Петеребург
+          </li>
+          <li class="contacts__item">
+            <img class="contacts__icon" width="45" height="45" alt="" src="">
+            Круглосуточно
+          </li>
+          <li class="contacts__item">
+            <img class="contacts__icon" width="45" height="45" alt="" src="">
+            <span class="contacts__phone">+7 911 293 94 85</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="account header-info__account" style="display: none">
+        <a class="account__button" href="#">Личный кабинет</a>
+      </div>
+    </div>
+
+    <div class="header-nav header__row">
+
+      <nav class="main-nav header-nav__main-nav">
+        <details class="main-nav__wrapper">
+          <summary class="main-nav__button">
+            Каталог
+          </summary>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Доставка и оплата
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Гарантия на товар
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Для поставщиков
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                О компании
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Вопрос-ответ
+              </a>
+            </li>
+          </ul>
+        </details>
+        <!--      Мб select?-->
+      </nav>
+
+      <div class="wrapper header-nav__search">
+        <form class="form-search header-nav__form-search">
+          <label class="form-search__label">
+<!--            Поиск по товарам-->
+            <svg class="form-search__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.6041 12.4159L18.0875 16.8993C18.2451 17.057 18.3335 17.2708 18.3335 17.4937C18.3334 17.7167 18.2447 17.9304 18.0871 18.088C17.9294 18.2456 17.7155 18.3341 17.4926 18.334C17.2697 18.3339 17.0559 18.2453 16.8983 18.0876L12.415 13.6043C11.0747 14.6423 9.38937 15.1308 7.70174 14.9704C6.01412 14.81 4.451 14.0126 3.33037 12.7406C2.20975 11.4686 1.61579 9.81746 1.66935 8.12307C1.7229 6.42868 2.41993 4.81833 3.61864 3.61962C4.81735 2.4209 6.4277 1.72387 8.12209 1.67032C9.81648 1.61677 11.4676 2.21072 12.7396 3.33135C14.0117 4.45197 14.809 6.01509 14.9694 7.70272C15.1299 9.39034 14.6414 11.0757 13.6033 12.4159H13.6041ZM8.3333 13.3334C9.65938 13.3334 10.9312 12.8067 11.8688 11.869C12.8065 10.9313 13.3333 9.65953 13.3333 8.33345C13.3333 7.00736 12.8065 5.73559 11.8688 4.79791C10.9312 3.86023 9.65938 3.33345 8.3333 3.33345C7.00722 3.33345 5.73545 3.86023 4.79777 4.79791C3.86009 5.73559 3.3333 7.00736 3.3333 8.33345C3.3333 9.65953 3.86009 10.9313 4.79777 11.869C5.73545 12.8067 7.00722 13.3334 8.3333 13.3334Z" fill="#202648"/>
+            </svg>
+            <input class="form-search__input" id="search" type="text" placeholder="Поиск" autocomplete="off">
+          </label>
+
+          <ul class="select-list form-search__select-list" style="display: none">
+            <li class="form-search__select-item">
+              <a class="form-search__select-link" href="#">Товар 1</a>
+            </li>
+            <li class="form-search__select-item">
+              <a class="form-search__select-link" href="#">Товар 2</a>
+            </li>
+            <li class="form-search__select-item">
+              <a class="form-search__select-link" href="#">Товар 3</a>
+            </li>
+          </ul>
+        </form>
+        <button class="form-search__reset-button" type="reset">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.70711 0.292893C1.31658 -0.0976311 0.683418 -0.0976311 0.292893 0.292893C-0.0976311 0.683418 -0.0976311 1.31658 0.292893 1.70711L3.58579 5L0.292893 8.29289C-0.0976311 8.68342 -0.0976311 9.31658 0.292893 9.70711C0.683418 10.0976 1.31658 10.0976 1.70711 9.70711L5 6.41421L8.29289 9.70711C8.68342 10.0976 9.31658 10.0976 9.70711 9.70711C10.0976 9.31658 10.0976 8.68342 9.70711 8.29289L6.41421 5L9.70711 1.70711C10.0976 1.31658 10.0976 0.683418 9.70711 0.292893C9.31658 -0.0976311 8.68342 -0.0976311 8.29289 0.292893L5 3.58579L1.70711 0.292893Z" fill="#202648"></path>
+          </svg>
+          <span class="visually-hidden">Сбросить поиск</span>
+        </button>
+      </div>
+
+      <div class="links wrapper header__links" style="display: none">
+        <a class="links__item" href="#">Доставка и оплата</a>
+        <a class="links__item" href="#">Контакты</a>
+      </div>
+
+      <div class="user-menu wrapper header-nav__user-menu">
+        <a class="button user-menu__account-button" href="#">Личный кабинет</a>
+
+        <div class="user-menu__buttons">
+          <a class="icon-button user-menu__cart-button" href="#">
+            <span class="icon-button__count">125</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M3.31416 8.20008C3.34768 7.78242 3.53729 7.39271 3.84522 7.10855C4.15315 6.8244 4.55682 6.66666 4.97582 6.66675H15.0242C15.4432 6.66666 15.8468 6.8244 16.1548 7.10855C16.4627 7.39271 16.6523 7.78242 16.6858 8.20008L17.355 16.5334C17.3734 16.7627 17.3441 16.9934 17.269 17.2109C17.1939 17.4283 17.0746 17.6279 16.9186 17.797C16.7626 17.966 16.5732 18.101 16.3625 18.1933C16.1518 18.2856 15.9242 18.3333 15.6942 18.3334H4.30582C4.07576 18.3333 3.8482 18.2856 3.63747 18.1933C3.42675 18.101 3.23742 17.966 3.0814 17.797C2.92539 17.6279 2.80607 17.4283 2.73097 17.2109C2.65586 16.9934 2.62659 16.7627 2.64499 16.5334L3.31416 8.20008V8.20008Z" stroke="#E3412A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M13.3333 9.16675V5.00008C13.3333 4.11603 12.9821 3.26818 12.357 2.64306C11.7319 2.01794 10.884 1.66675 9.99996 1.66675C9.1159 1.66675 8.26806 2.01794 7.64294 2.64306C7.01782 3.26818 6.66663 4.11603 6.66663 5.00008V9.16675" stroke="#E3412A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <!--          <span class="visually-hidden">Корзина</span>-->
+          </a>
+          <a class="icon-button user-menu__favorite-button" href="#">
+            <span class="icon-button__count">1</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M5.83329 2.5C3.53246 2.5 1.66663 4.34667 1.66663 6.625C1.66663 8.46417 2.39579 12.8292 9.57329 17.2417C9.70186 17.3199 9.84946 17.3613 9.99996 17.3613C10.1505 17.3613 10.2981 17.3199 10.4266 17.2417C17.6041 12.8292 18.3333 8.46417 18.3333 6.625C18.3333 4.34667 16.4675 2.5 14.1666 2.5C11.8658 2.5 9.99996 5 9.99996 5C9.99996 5 8.13413 2.5 5.83329 2.5Z" stroke="#E3412A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <!--          <span class="visually-hidden">Избранное</span>-->
+          </a>
+        </div>
+      </div>
+
+    </div>
   </header>
 
-  <main>
-    main
+  <main class="main page__main">
+    <article class="wrapper banner main__banner">
+      <div class="banner__images-container">
+<!--        <img class="banner__image&#45;&#45;background" width="100%"  alt="" src="./public/img/banner-background.jpg">-->
+<!--        <img class="banner__image&#45;&#45;products"  alt="" src="./public/img/banner-cleaning.png">-->
+
+        <div class="banner__text-wrapper">
+          <h2 class="banner__title">Профессиональная химия <span class="banner__title--category">для клининга</span></h2>
+          <p class="banner__subtitle">Весь товар сертифицирован</p>
+          <a class="banner__button" href="#">Перейти в каталог</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="wrapper recommendations main__recommendations">
+      <h2 class="recommendations__title visually-hidden">Популярные категории или ваши рекомендации</h2>
+
+      <div class="product recommendations__product recommendations__product--regular">
+        <a class="product__link" href="#">
+          <div class="product__picture">
+            <img class="product__image" width="130" height="100" src="" alt="">
+          </div>
+          <p class="product__text">Бумажная продукция</p>
+        </a>
+      </div>
+
+      <div class="product recommendations__product recommendations__product--popular">
+        <a class="product__link" href="#">
+          <div class="product__picture">
+            <img class="product__image" width="130" height="100" src="" alt="">
+            <span class="product__label-text">Хит</span>
+            <svg class="product__label" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.5 0L32.5923 11.8969L41.7446 3.2645L39.8394 15.7005L51.955 12.3102L44.4888 22.4363L56.7922 25.0647L45.4753 30.5612L55.148 38.6062L42.573 38.2139L47.399 49.8326L36.4468 43.6413L35.3205 56.1718L28.5 45.6L21.6795 56.1718L20.5532 43.6413L9.601 49.8326L14.427 38.2139L1.85204 38.6062L11.5247 30.5612L0.207798 25.0647L12.5112 22.4363L5.04496 12.3102L17.1606 15.7005L15.2554 3.2645L24.4077 11.8969L28.5 0Z" fill="#36BACE"/>
+            </svg>
+          </div>
+          <p class="product__text">Бумажная продукция</p>
+        </a>
+      </div>
+
+      <div class="product recommendations__product recommendations__product--new">
+        <a class="product__link" href="#">
+          <div class="product__picture">
+            <img class="product__image" width="130" height="100" src="" alt="">
+            <span class="product__label-text">New</span>
+            <svg class="product__label" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.5 0L32.5923 11.8969L41.7446 3.2645L39.8394 15.7005L51.955 12.3102L44.4888 22.4363L56.7922 25.0647L45.4753 30.5612L55.148 38.6062L42.573 38.2139L47.399 49.8326L36.4468 43.6413L35.3205 56.1718L28.5 45.6L21.6795 56.1718L20.5532 43.6413L9.601 49.8326L14.427 38.2139L1.85204 38.6062L11.5247 30.5612L0.207798 25.0647L12.5112 22.4363L5.04496 12.3102L17.1606 15.7005L15.2554 3.2645L24.4077 11.8969L28.5 0Z" fill="#E3412A"/>
+            </svg>
+          </div>
+          <p class="product__text">Бумажная продукция</p>
+        </a>
+      </div>
+
+      <div class="product recommendations__product recommendations__product--new">
+        <a class="product__link" href="#">
+          <div class="product__picture">
+            <img class="product__image" width="130" height="100" src="" alt="">
+            <span class="product__label-text">New</span>
+            <svg class="product__label" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.5 0L32.5923 11.8969L41.7446 3.2645L39.8394 15.7005L51.955 12.3102L44.4888 22.4363L56.7922 25.0647L45.4753 30.5612L55.148 38.6062L42.573 38.2139L47.399 49.8326L36.4468 43.6413L35.3205 56.1718L28.5 45.6L21.6795 56.1718L20.5532 43.6413L9.601 49.8326L14.427 38.2139L1.85204 38.6062L11.5247 30.5612L0.207798 25.0647L12.5112 22.4363L5.04496 12.3102L17.1606 15.7005L15.2554 3.2645L24.4077 11.8969L28.5 0Z" fill="#E3412A"/>
+            </svg>
+          </div>
+          <p class="product__text">Бумажная продукция</p>
+        </a>
+      </div>
+    </article>
+
+    <article class="wrapper catalog main__catalog">
+      <h2 class="catalog__title">Каталог</h2>
+
+      <div class="catalog__products">
+        <div class="product catalog__product product--shadow">
+          <a class="product__link" href="#">
+            <div class="product__picture">
+              <img class="product__image" width="130" height="100" src="" alt="">
+              <span class="product__label-text">New</span>
+              <svg class="product__label" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.5 0L32.5923 11.8969L41.7446 3.2645L39.8394 15.7005L51.955 12.3102L44.4888 22.4363L56.7922 25.0647L45.4753 30.5612L55.148 38.6062L42.573 38.2139L47.399 49.8326L36.4468 43.6413L35.3205 56.1718L28.5 45.6L21.6795 56.1718L20.5532 43.6413L9.601 49.8326L14.427 38.2139L1.85204 38.6062L11.5247 30.5612L0.207798 25.0647L12.5112 22.4363L5.04496 12.3102L17.1606 15.7005L15.2554 3.2645L24.4077 11.8969L28.5 0Z" fill="#E3412A"/>
+              </svg>
+            </div>
+            <p class="product__text">Бумажная продукция</p>
+          </a>
+        </div>
+
+        <div class="product catalog__product product--shadow">
+          <a class="product__link" href="#">
+            <div class="product__picture">
+              <img class="product__image" width="130" height="100" src="" alt="">
+              <span class="product__label-text">New</span>
+              <svg class="product__label" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.5 0L32.5923 11.8969L41.7446 3.2645L39.8394 15.7005L51.955 12.3102L44.4888 22.4363L56.7922 25.0647L45.4753 30.5612L55.148 38.6062L42.573 38.2139L47.399 49.8326L36.4468 43.6413L35.3205 56.1718L28.5 45.6L21.6795 56.1718L20.5532 43.6413L9.601 49.8326L14.427 38.2139L1.85204 38.6062L11.5247 30.5612L0.207798 25.0647L12.5112 22.4363L5.04496 12.3102L17.1606 15.7005L15.2554 3.2645L24.4077 11.8969L28.5 0Z" fill="#E3412A"/>
+              </svg>
+            </div>
+            <p class="product__text">Бумажная продукция</p>
+          </a>
+        </div>
+
+
+        <div class="product catalog__product product--shadow">
+          <a class="product__link" href="#">
+            <div class="product__picture">
+              <img class="product__image" width="130" height="100" src="" alt="">
+              <span class="product__label-text">New</span>
+              <svg class="product__label" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.5 0L32.5923 11.8969L41.7446 3.2645L39.8394 15.7005L51.955 12.3102L44.4888 22.4363L56.7922 25.0647L45.4753 30.5612L55.148 38.6062L42.573 38.2139L47.399 49.8326L36.4468 43.6413L35.3205 56.1718L28.5 45.6L21.6795 56.1718L20.5532 43.6413L9.601 49.8326L14.427 38.2139L1.85204 38.6062L11.5247 30.5612L0.207798 25.0647L12.5112 22.4363L5.04496 12.3102L17.1606 15.7005L15.2554 3.2645L24.4077 11.8969L28.5 0Z" fill="#E3412A"/>
+              </svg>
+            </div>
+            <p class="product__text">Бумажная продукция</p>
+          </a>
+        </div>
+
+
+        <div class="product catalog__product product--shadow">
+          <a class="product__link" href="#">
+            <div class="product__picture">
+              <img class="product__image" width="130" height="100" src="" alt="">
+              <span class="product__label-text">New</span>
+              <svg class="product__label" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.5 0L32.5923 11.8969L41.7446 3.2645L39.8394 15.7005L51.955 12.3102L44.4888 22.4363L56.7922 25.0647L45.4753 30.5612L55.148 38.6062L42.573 38.2139L47.399 49.8326L36.4468 43.6413L35.3205 56.1718L28.5 45.6L21.6795 56.1718L20.5532 43.6413L9.601 49.8326L14.427 38.2139L1.85204 38.6062L11.5247 30.5612L0.207798 25.0647L12.5112 22.4363L5.04496 12.3102L17.1606 15.7005L15.2554 3.2645L24.4077 11.8969L28.5 0Z" fill="#E3412A"/>
+              </svg>
+            </div>
+            <p class="product__text">Бумажная продукция</p>
+          </a>
+        </div>
+
+
+        <div class="product catalog__product product--shadow">
+          <a class="product__link" href="#">
+            <div class="product__picture">
+              <img class="product__image" width="130" height="100" src="" alt="">
+              <span class="product__label-text">New</span>
+              <svg class="product__label" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.5 0L32.5923 11.8969L41.7446 3.2645L39.8394 15.7005L51.955 12.3102L44.4888 22.4363L56.7922 25.0647L45.4753 30.5612L55.148 38.6062L42.573 38.2139L47.399 49.8326L36.4468 43.6413L35.3205 56.1718L28.5 45.6L21.6795 56.1718L20.5532 43.6413L9.601 49.8326L14.427 38.2139L1.85204 38.6062L11.5247 30.5612L0.207798 25.0647L12.5112 22.4363L5.04496 12.3102L17.1606 15.7005L15.2554 3.2645L24.4077 11.8969L28.5 0Z" fill="#E3412A"/>
+              </svg>
+            </div>
+            <p class="product__text">Бумажная продукция</p>
+          </a>
+        </div>
+
+
+        <div class="product catalog__product product--shadow">
+          <a class="product__link" href="#">
+            <div class="product__picture">
+              <img class="product__image" width="130" height="100" src="" alt="">
+              <span class="product__label-text">New</span>
+              <svg class="product__label" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.5 0L32.5923 11.8969L41.7446 3.2645L39.8394 15.7005L51.955 12.3102L44.4888 22.4363L56.7922 25.0647L45.4753 30.5612L55.148 38.6062L42.573 38.2139L47.399 49.8326L36.4468 43.6413L35.3205 56.1718L28.5 45.6L21.6795 56.1718L20.5532 43.6413L9.601 49.8326L14.427 38.2139L1.85204 38.6062L11.5247 30.5612L0.207798 25.0647L12.5112 22.4363L5.04496 12.3102L17.1606 15.7005L15.2554 3.2645L24.4077 11.8969L28.5 0Z" fill="#E3412A"/>
+              </svg>
+            </div>
+            <p class="product__text">Бумажная продукция</p>
+          </a>
+        </div>
+
+
+        <div class="product catalog__product product--shadow">
+          <a class="product__link" href="#">
+            <div class="product__picture">
+              <img class="product__image" width="130" height="100" src="" alt="">
+              <span class="product__label-text">New</span>
+              <svg class="product__label" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.5 0L32.5923 11.8969L41.7446 3.2645L39.8394 15.7005L51.955 12.3102L44.4888 22.4363L56.7922 25.0647L45.4753 30.5612L55.148 38.6062L42.573 38.2139L47.399 49.8326L36.4468 43.6413L35.3205 56.1718L28.5 45.6L21.6795 56.1718L20.5532 43.6413L9.601 49.8326L14.427 38.2139L1.85204 38.6062L11.5247 30.5612L0.207798 25.0647L12.5112 22.4363L5.04496 12.3102L17.1606 15.7005L15.2554 3.2645L24.4077 11.8969L28.5 0Z" fill="#E3412A"/>
+              </svg>
+            </div>
+            <p class="product__text">Бумажная продукция</p>
+          </a>
+        </div>
+
+        <div class="product catalog__product product--shadow">
+          <a class="product__link" href="#">
+            <div class="product__picture">
+              <img class="product__image" width="130" height="100" src="" alt="">
+              <span class="product__label-text">New</span>
+              <svg class="product__label" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.5 0L32.5923 11.8969L41.7446 3.2645L39.8394 15.7005L51.955 12.3102L44.4888 22.4363L56.7922 25.0647L45.4753 30.5612L55.148 38.6062L42.573 38.2139L47.399 49.8326L36.4468 43.6413L35.3205 56.1718L28.5 45.6L21.6795 56.1718L20.5532 43.6413L9.601 49.8326L14.427 38.2139L1.85204 38.6062L11.5247 30.5612L0.207798 25.0647L12.5112 22.4363L5.04496 12.3102L17.1606 15.7005L15.2554 3.2645L24.4077 11.8969L28.5 0Z" fill="#E3412A"/>
+              </svg>
+            </div>
+            <p class="product__text">Бумажная продукция</p>
+          </a>
+        </div>
+
+      </div>
+
+      <button class="catalog__button" type="button">
+        Показать ещё
+      </button>
+    </article>
+
+    <article class="wrapper features main__features">
+      <h2 class="visually-hidden">Преимущества</h2>
+
+      <div class="feature features__item">
+        <img class="features__icon" width="45" height="45" alt="" src="">
+        <p class="features__text">Удобная и быстрая доставка</p>
+      </div>
+
+      <div class="feature features__item">
+        <img class="features__icon" width="45" height="45" alt="" src="">
+        <p class="features__text">14 дней на обмен и возврат</p>
+      </div>
+
+      <div class="feature features__item">
+        <img class="features__icon" width="45" height="45" alt="" src="">
+        <p class="features__text">Весь товар сертифицирован</p>
+      </div>
+
+      <div class="feature features__item">
+        <img class="features__icon" width="45" height="45" alt="" src="">
+        <p class="features__text">Скидка постоянным клиентам</p>
+      </div>
+    </article>
+
+    <article class="wrapper popular main__popular">
+      <h2 class="popular__title">Лидеры продаж</h2>
+
+      <div class="popular__products">
+
+        <div class="product popular__product product--shadow">
+          <a class="product__link" href="#">
+            <div class="product__picture">
+              <img class="product__image" width="130" height="100" src="" alt="">
+              <span class="product__label-text">New</span>
+              <svg class="product__label" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.5 0L32.5923 11.8969L41.7446 3.2645L39.8394 15.7005L51.955 12.3102L44.4888 22.4363L56.7922 25.0647L45.4753 30.5612L55.148 38.6062L42.573 38.2139L47.399 49.8326L36.4468 43.6413L35.3205 56.1718L28.5 45.6L21.6795 56.1718L20.5532 43.6413L9.601 49.8326L14.427 38.2139L1.85204 38.6062L11.5247 30.5612L0.207798 25.0647L12.5112 22.4363L5.04496 12.3102L17.1606 15.7005L15.2554 3.2645L24.4077 11.8969L28.5 0Z" fill="#E3412A"/>
+              </svg>
+            </div>
+            <p class="product__text">
+              Размешиватель для напитков<br>
+              <span class="product__vendor-code">1002004</span>
+            </p>
+            <div class="product__rate">
+              <svg width="17" height="17"></svg>
+              <svg width="17" height="17"></svg>
+              <svg width="17" height="17"></svg>
+              <svg width="17" height="17"></svg>
+              <svg width="17" height="17"></svg>
+            </div>
+            <p class="product__price">90 руб./упак</p>
+            <p class="product__description">Деревянные мешалки 14 см (500 шт/упак)</p>
+
+            <div class="product__buttons">
+              <button class="product__button-favorite" type="button">
+                <span class="visually-hidden">В избранное</span>
+                <svg width="17" height="17"></svg>
+              </button>
+              <button class="product__button-cart" type="button">В корзину</button>
+            </div>
+          </a>
+        </div>
+
+        <div class="product popular__product product--shadow">
+          <a class="product__link" href="#">
+            <div class="product__picture">
+              <img class="product__image" width="130" height="100" src="" alt="">
+              <span class="product__label-text">New</span>
+              <svg class="product__label" width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28.5 0L32.5923 11.8969L41.7446 3.2645L39.8394 15.7005L51.955 12.3102L44.4888 22.4363L56.7922 25.0647L45.4753 30.5612L55.148 38.6062L42.573 38.2139L47.399 49.8326L36.4468 43.6413L35.3205 56.1718L28.5 45.6L21.6795 56.1718L20.5532 43.6413L9.601 49.8326L14.427 38.2139L1.85204 38.6062L11.5247 30.5612L0.207798 25.0647L12.5112 22.4363L5.04496 12.3102L17.1606 15.7005L15.2554 3.2645L24.4077 11.8969L28.5 0Z" fill="#E3412A"/>
+              </svg>
+            </div>
+            <p class="product__text">
+              Размешиватель для напитков<br>
+              <span class="product__vendor-code">1002004</span>
+            </p>
+            <div class="product__rate">
+              <svg width="17" height="17"></svg>
+              <svg width="17" height="17"></svg>
+              <svg width="17" height="17"></svg>
+              <svg width="17" height="17"></svg>
+              <svg width="17" height="17"></svg>
+            </div>
+            <p class="product__price">90 руб./упак</p>
+            <p class="product__description">Деревянные мешалки 14 см (500 шт/упак)</p>
+            <div class="product__buttons">
+              <button class="product__button-favorite" type="button">
+                <span class="visually-hidden">В избранное</span>
+                <svg width="17" height="17"></svg>
+              </button>
+              <button class="product__button-cart" type="button">В корзину</button>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </article>
+
+    <article class="wrapper about main__about">
+      <h2 class="about__title">О компании</h2>
+      <p class="about__text">
+        Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности в
+        значительной степени обуславливает создание новых предложений. С другой стороны рамки и место обучения кадров
+        играет важную роль в формировании существенных финансовых и административных условий. Задача организации,
+        в особенности же реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие
+        в формировании соответствующий условий активизации.
+      </p>
+      <p class="about__text">
+        Задача организации, в особенности же новая модель организационной деятельности требуют определения
+        и уточнения форм развития. С другой стороны дальнейшее развитие различных форм деятельности влечет
+        за собой процесс внедрения и модернизации соответствующий условий активизации. Товарищи! дальнейшее
+        развитие различных форм деятельности позволяет оценить значение направлений прогрессивного развития.
+      </p>
+
+      <a class="about__button" href="#">Подробнее о компании</a>
+    </article>
+
+    <article class="wrapper faq main__faq">
+      <h2 class="faq__title">Часто задаваемые вопросы</h2>
+
+      <details class="question faq__question">
+        <summary class="question__title">Как осуществляется доставка в регионы?</summary>
+        <p class="question__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto beatae, consectetur culpa
+        debitis delectus deleniti dignissimos dolorem error ipsa iure magnam maxime molestiae mollitia natus non
+        suscipit tempora veritatis?
+        </p>
+      </details>
+
+      <details class="question faq__question">
+        <summary class="question__title">Возможен ли самовывоз заказанного товара?</summary>
+        <p class="question__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto beatae, consectetur culpa
+          debitis delectus deleniti dignissimos dolorem error ipsa iure magnam maxime molestiae mollitia natus non
+          suscipit tempora veritatis?
+        </p>
+      </details>
+
+      <details class="question faq__question">
+        <summary class="question__title">Как расчитать стоимость доставки в Магадан?</summary>
+        <p class="question__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto beatae, consectetur culpa
+          debitis delectus deleniti dignissimos dolorem error ipsa iure magnam maxime molestiae mollitia natus non
+          suscipit tempora veritatis?
+        </p>
+      </details>
+
+        <details class="question faq__question">
+          <summary class="question__title">Подскажите какой режим работы телефонного консультанта?</summary>
+          <p class="question__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto beatae, consectetur culpa
+            debitis delectus deleniti dignissimos dolorem error ipsa iure magnam maxime molestiae mollitia natus non
+            suscipit tempora veritatis?
+          </p>
+        </details>
+
+    </article>
+
+    <article class="wrapper feedback main__feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <p class="feedback__title">Остались вопросы?</p>
+
+      <p class="feedback__text">
+        Звоните по телефону <a class="feedback__phone" href="tel:">+7 911 293 94 85</a> или оставьте заявку на сайте, чтобы получить
+        бесплатную консультацию от нашего менеджера! <br> Мы работаем круглосуточно!
+      </p>
+
+      <form class="contact-form feedback__contact-form">
+        <label class="contact-form__label" for="name">Ваше имя</label>
+        <input class="contact-form__input" id="name" name="name" type="text" placeholder="Александр">
+
+        <label class="contact-form__label" for="phone">Телефон</label>
+        <input class="contact-form__input" id="phone" name="phone" type="number" placeholder="+7">
+
+        <button class="contact-form__button" type="submit">Отправить</button>
+        <p class="contact-form__text">Нажимая «Отправить» вы соглашаетесь с Политикой конфиденциальности и Правилами обработки персональных данных</p>
+      </form>
+    </article>
   </main>
 
-  <footer>
-    footer
+  <footer class="footer page__footer">
+
+    <div class="info footer__info">
+      <button class="info__call-button" type="button">Заказать звонок</button>
+
+      <div class="wrapper info__details">
+        <p class="info__copyright">2023 © «Интернет-магазин "<span class="info__copyright--capitalize">Page</span>"»</p>
+        <div class="info__payment">
+          <img
+            width="192"
+            height="22"
+            alt="Принимаем платежи мастеркард, виза, ?, киви"
+            src=""
+          >
+        </div>
+      </div>
+    </div>
+
+    <nav class="wrapper footer-nav footer__nav">
+
+      <section class="footer-nav__section">
+        <h3 class="footer-title footer-nav__title">Компания</h3>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">О компании</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Новости</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer-nav__section">
+        <h3 class="footer-title footer-nav__title">Информация</h3>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Помощь</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Гарантия на товар</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Для поставщиков</a>
+          </li>
+        </ul>
+      </section>
+
+
+      <section class="footer-nav__section">
+        <h3 class="footer-title footer-nav__title">Помощь</h3>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Статьи</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="#">Вопрос-ответ</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+    <div class="wrapper contacts footer__contacts">
+      <h3 class="footer-title contacts__title">Контакты</h3>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <img class="contacts__icon" width="45" height="45" alt="" src="">
+          <span>+7 911 293 94 85</span>
+        </li>
+        <li class="contacts__item">
+          <img class="contacts__icon" width="45" height="45" alt="" src="">
+          <span>Санкт-Петербург, <br>ул. Ладожский проспект, д. 10</span>
+        </li>
+      </ul>
+
+      <h3 class="footer-title contacts__title">Социальные сети</h3>
+      <ul class="contacts__list contacts__list--row">
+        <li class="contacts__item">
+          <a class="contacts__link" href="#">
+            <img class="contacts__icon" width="45" height="45" alt="" src="">
+            <span class="visually-hidden">Vk</span>
+          </a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link" href="#">
+            <img class="contacts__icon" width="45" height="45" alt="" src="">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link" href="#">
+            <img class="contacts__icon" width="45" height="45" alt="" src="">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <hr class="footer__separator">
+
+    <div class="wrapper footer__texts">
+      <p class="footer__text">
+        Обращаем ваше внимание, что производитель оставляет за собой право изменять характеристики товара без предварительного уведомления.
+      </p>
+      <p class="footer__text">
+        Информация о товаре носит справочный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского Кодекса Российской Федерации.
+      </p>
+    </div>
   </footer>
 
 </body>
