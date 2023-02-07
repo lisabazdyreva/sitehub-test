@@ -92,6 +92,7 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--dark-blue-text);
+  font-weight: 700;
 }
 
 .info-button {
@@ -704,13 +705,6 @@
 
   /*feedback*/
 
-.feedback__title {
-  list-style: none;
-  text-align: center;
-  color: var(--dark-blue-text);
-  font-weight: 600;
-  text-transform: uppercase;
-}
 
 .feedback__text {
   font-size: 16px;
@@ -924,6 +918,10 @@
   border-radius: 5px;
 }
 
+.footer__logo-link {
+  display: none;
+}
+
 
 
 @media screen and (min-width: 590px) {
@@ -992,6 +990,22 @@
     padding-left: 20px;
   }
 
+  .features {
+    flex-direction: row;
+    border: 1px solid var(--button-background);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    padding-top: 30px;
+  }
+
+  .feature {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .features__text {
+    text-align: center;
+  }
+
   .about__button {
     width: max-content;
   }
@@ -1022,6 +1036,15 @@
 
   .contact-form__text {
     grid-column: span 3;
+  }
+
+  .info__call-button {
+    border-radius: 5px;
+    width: max-content;
+  }
+
+  .footer__info {
+    margin: 10px auto;
   }
 
 
@@ -1087,6 +1110,11 @@
   /*  padding-top: 10px;*/
   /*}*/
 
+  .feedback {
+    background-color: var(--button-background);
+    border-radius: 10px;
+  }
+
   .footer__wrapper {
     margin-top: 30px;
     border-bottom: 1px solid var(--white-text);
@@ -1127,5 +1155,47 @@
 
   .footer__text:first-child {
     margin-top: 30px;
+  }
+
+/*  */
+
+  .product {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product__picture {
+    position: relative;
+    display: block;
+    padding-bottom: 0;
+    order: 2;
+    margin: 0;
+  }
+
+  .product__link {
+    max-width: min-content;
+  }
+
+  .product__text {
+    margin-left: 25px;
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .product__image {
+    height: auto;
+    position: relative;
+    width: 100%;
+    display: block;
+    order: 1;
+    border-radius: 10px;
+  }
+
+  .product__label-text {
+    bottom: 46px;
+  }
+
+  .product__picture--popular .product__label {
+    bottom: 30px;
   }
 }
