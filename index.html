@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Page - поставщик хозйяственных и медицинских товаров </title>
-<!--user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0-->
+  <title>Page - поставщик хозяйственных и медицинских товаров </title>
   <link rel="stylesheet" href="public/css/normalize.css">
   <link rel="stylesheet" href="public/css/style.css">
 
@@ -87,8 +86,8 @@
         <path fill="#202648" d="m12.646 11.2 3.8 3.8-3.8 3.8a1.154 1.154 0 0 0 1.631 1.632l4.615-4.615c.451-.45.451-1.182 0-1.632l-4.615-4.616a1.154 1.154 0 0 0-1.63 1.631ZM0 15c0 8.27 6.73 15 15 15s15-6.73 15-15S23.27 0 15 0 0 6.73 0 15Zm2.308 0C2.308 8.002 8.002 2.308 15 2.308S27.692 8.002 27.692 15 21.998 27.692 15 27.692 2.308 21.998 2.308 15Z"/>
       </symbol>
 
-      <symbol id="slider-icon">
-
+      <symbol id="slider-button" viewBox="0 0 11 11">
+        <rect y="0.163452" width="10.8171" height="10.8171" rx="5.40856"/>
       </symbol>
 
       <symbol id="icon-label" viewBox="0 0 70 69">
@@ -118,10 +117,6 @@
         <path fill="#E3412A" d="M23.938 10a2.5 2.5 0 0 0-2.15-1.25H18.75v-2.5A1.25 1.25 0 0 0 17.5 5H5a2.5 2.5 0 0 0-2.5 2.5V20a2.5 2.5 0 0 0 1.25 2.163 4.378 4.378 0 1 0 8.75.337h3.875a4.35 4.35 0 0 0 8.625 0 2.5 2.5 0 0 0 2.5-2.5v-3.75a1.338 1.338 0 0 0-.175-.65L23.938 10Zm-5.188 1.25h3.038l2.25 3.75H18.75v-3.75ZM8.125 23.75a1.875 1.875 0 1 1 0-3.75 1.875 1.875 0 0 1 0 3.75Zm12.5 0a1.875 1.875 0 1 1 0-3.75 1.875 1.875 0 0 1 0 3.75Z"/>
       </symbol>
 
-      <symbol id="icon-arrow-accordion">
-
-      </symbol>
-
       <symbol id="icon-star" viewBox="0 0 20 20" fill="none">
         <path stroke="#E3412A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.23 2.2a.83.83 0 0 1 1.54 0l1.73 4.77a.82.82 0 0 0 .77.53h4.24c.78 0 1.12.97.5 1.45L15 11.67a.8.8 0 0 0-.27.9l1.1 4.68c.27.75-.6 1.39-1.25.93l-4.1-2.6a.83.83 0 0 0-.96 0l-4.1 2.6c-.65.46-1.52-.18-1.25-.93l1.1-4.67a.8.8 0 0 0-.27-.91L1.98 8.95c-.61-.48-.27-1.45.51-1.45h4.24a.82.82 0 0 0 .77-.53L9.23 2.2h0Z"/>
       </symbol>
@@ -130,8 +125,8 @@
         <path fill="#E3412A" stroke="#E3412A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.23 2.2a.83.83 0 0 1 1.54 0l1.73 4.77a.82.82 0 0 0 .77.53h4.24c.78 0 1.12.97.5 1.45L15 11.67a.8.8 0 0 0-.27.9l1.1 4.68c.27.75-.6 1.39-1.25.93l-4.1-2.6a.83.83 0 0 0-.96 0l-4.1 2.6c-.65.46-1.52-.18-1.25-.93l1.1-4.67a.8.8 0 0 0-.27-.91L1.98 8.95c-.61-.48-.27-1.45.51-1.45h4.24a.82.82 0 0 0 .77-.53L9.23 2.2h0Z"/>
       </symbol>
 
-      <symbol id="icon-arrow-up">
-
+      <symbol id="icon-arrow-up" viewBox="0 0 20 20" fill="none">
+        <path stroke="#E3412A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15.83 9.17 10 3.33 4.17 9.17M10 3.33v13.34V3.33Z"/>
       </symbol>
 
       <symbol id="icon-mastercard" viewBox="-96 -98.9 832 593.4">
@@ -191,34 +186,49 @@
   <header class="header page__header">
     <div class="wrapper header-info header__row">
 
-      <div class="logo header-info__logo">
-        <a class="logo-link logo-wrapper__link" href="#">
-          <svg width="160" height="47" aria-hidden="true">
+      <div class="company-info header-info__company-info">
+        <a class="company-link company-info__link" href="#">
+          <svg class="company-info__icon" width="160" height="47" aria-hidden="true">
             <use xlink:href="#icon-main-logo"></use>
           </svg>
         </a>
-        <h1 class="title-main logo-wrapper__title-main">Надежный поставщик хозяйственных и медицинских товаров</h1>
+        <h1 class="title-main company-info__title-main">Надежный поставщик хозяйственных и медицинских товаров</h1>
       </div>
 
-      <div class="contacts header-info__contacts" style="display: none">
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <img class="contacts__icon" width="45" height="45" alt="" src="">
-            Санкт-Петеребург
-          </li>
-          <li class="contacts__item">
-            <img class="contacts__icon" width="45" height="45" alt="" src="">
-            Круглосуточно
-          </li>
-          <li class="contacts__item">
-            <img class="contacts__icon" width="45" height="45" alt="" src="">
-            <span class="contacts__phone">+7 911 293 94 85</span>
-          </li>
-        </ul>
-      </div>
+      <div class="header-info__wrapper">
 
-      <div class="account header-info__account" style="display: none">
-        <a class="account__button" href="#">Личный кабинет</a>
+        <div class="contacts header-info__contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <div class="contact__icon-background">
+                <svg class="contact__icon" width="20" height="20" fill="none" aria-hidden="true">
+                  <use xlink:href="#icon-location"></use>
+                </svg>
+              </div>
+              <span class="contacts__text">Санкт-Петербург</span>
+            </li>
+            <li class="contacts__item">
+              <div class="contact__icon-background">
+                <svg class="contact__icon" width="20" height="20" fill="none" aria-hidden="true">
+                  <use xlink:href="#icon-location"></use>
+                </svg>
+              </div>
+              <span class="contacts__text">Круглосуточно</span>
+            </li>
+            <li class="contacts__item">
+              <div class="contact__icon-background">
+                <svg class="contact__icon" width="20" height="20" fill="none" aria-hidden="true">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+              </div>
+              <span class="contacts__text"><a class="contacts__phone" href="tel:+79112939485">+7 911 293 94 85</a></span>
+            </li>
+
+          </ul>
+        </div>
+        <div class="account header-info__account">
+          <a class="important-button user-menu__account-button" href="#">Личный кабинет</a>
+        </div>
       </div>
     </div>
 
@@ -252,55 +262,54 @@
       <div class="wrapper header-nav__search">
         <form class="form-search header-nav__form-search">
           <label class="form-search__label">
-<!--            Поиск по товарам-->
             <svg class="form-search__icon" width="20" height="20" aria-hidden="true">
               <use xlink:href="#icon-search"></use>
             </svg>
             <input class="form-search__input" id="search" type="text" placeholder="Поиск" autocomplete="off">
           </label>
 
-          <ul class="select-list form-search__select-list" style="display: none">
-            <li class="form-search__select-item">
-              <a class="form-search__select-link" href="#">Товар 1</a>
+          <ul class="search-list form-search__select-list">
+            <li class="search-list__item">
+              <a class="search-list__link" href="#">Товар 1</a>
             </li>
-            <li class="form-search__select-item">
-              <a class="form-search__select-link" href="#">Товар 2</a>
+            <li class="search-list__item">
+              <a class="search-list__link" href="#">Товар 2</a>
             </li>
-            <li class="form-search__select-item">
-              <a class="form-search__select-link" href="#">Товар 3</a>
+            <li class="search-list__item">
+              <a class="search-list__link" href="#">Товар 3</a>
             </li>
           </ul>
         </form>
         <button class="form-search__reset-button" type="reset">
-          <svg aria-hidden="true" width="10" height="10">
+          <svg class="form-search__reset-icon" aria-hidden="true" width="10" height="10">
             <use xlink:href="#icon-close"></use>
           </svg>
           <span class="visually-hidden">Сбросить поиск</span>
         </button>
       </div>
 
-      <div class="links wrapper header__links" style="display: none">
+      <div class="links header__links">
         <a class="links__item" href="#">Доставка и оплата</a>
         <a class="links__item" href="#">Контакты</a>
       </div>
 
       <div class="user-menu wrapper header-nav__user-menu">
-        <a class="button user-menu__account-button" href="#">Личный кабинет</a>
+        <a class="important-button user-menu__account-button" href="#">Личный кабинет</a>
 
         <div class="user-menu__buttons">
           <a class="icon-button user-menu__cart-button" href="#">
-            <span class="icon-button__count">125</span>
+            <span class="icon-button__count">56</span>
             <svg width="20" height="20" aria-hidden="true" fill="none">
               <use xlink:href="#icon-cart"></use>
             </svg>
-            <!--          <span class="visually-hidden">Корзина</span>-->
+            <span class="visually-hidden">Корзина</span>
           </a>
           <a class="icon-button user-menu__favorite-button" href="#">
-            <span class="icon-button__count">1</span>
+            <span class="icon-button__count">0</span>
             <svg width="20" height="20" fill="none">
              <use xlink:href="#icon-favorite"></use>
             </svg>
-            <!--          <span class="visually-hidden">Избранное</span>-->
+            <span class="visually-hidden">Избранное</span>
           </a>
         </div>
       </div>
@@ -311,30 +320,68 @@
 
   <main class="main page__main">
     <article class="wrapper banner main__banner">
-      <div class="banner__images-container">
+      <div class="banner__image-container">
+
+        <button class="banner__slider-arrow" data-arrow="less">
+          <svg class="banner__slider-icon" width="30" height="30" aria-hidden="true">
+            <use xlink:href="#arrow-left"></use>
+          </svg>
+        </button>
+
+
         <div class="banner__text-wrapper">
-          <h2 class="banner__title">Профессиональная химия <br><span class="banner__title--category">для клининга</span></h2>
+          <h2 class="banner__title banner__title--slide-2">Профессиональная химия <br>
+            <span class="banner__title--category">для клининга</span>
+          </h2>
+
           <p class="banner__subtitle">Весь товар сертифицирован</p>
           <a class="info-button banner__button" href="#">Перейти в каталог</a>
         </div>
 
+
         <picture class="banner__picture">
-<!--          <source-->
-<!--            type="image/webp"-->
-<!--            srcset="./public/img/cleaning-products.webp, ./public/img/cleaning-products@2x.webp 2x"-->
-<!--          >-->
+          <source
+            type="image/webp"
+            srcset="./public/img/cleaning-products.webp, ./public/img/cleaning-products@2x.webp 2x"
+          >
           <img
             class="banner__product-image"
             src="./public/img/cleaning-products.jpg"
             srcset="./public/img/cleaning-products@2x.jpg 2x"
-            alt="Бумага для печати">
+            alt="">
         </picture>
+
+        <button class="banner__slider-arrow" data-arrow="more">
+          <svg class="banner__slider-icon" width="30" height="30" aria-hidden="true">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="banner__slider-buttons">
+        <button class="banner__slider-button">
+          <span class="visually-hidden">1 слайд</span>
+          <svg width="11" height="11" class="banner__slider-icon">
+            <use xlink:href="#slider-button"></use>
+          </svg>
+        </button>
+        <button class="banner__slider-button banner__slider-button--active">
+          <span class="visually-hidden">2 слайд</span>
+          <svg width="11" height="11" class="banner__slider-icon">
+            <use xlink:href="#slider-button"></use>
+          </svg>
+        </button>
+        <button class="banner__slider-button">
+          <span class="visually-hidden">3 слайд</span>
+          <svg width="11" height="11" class="banner__slider-icon">
+            <use xlink:href="#slider-button"></use>
+          </svg>
+        </button>
       </div>
     </article>
 
     <article class="wrapper recommendations main__recommendations">
       <h2 class="recommendations__title visually-hidden">Популярные категории или ваши рекомендации</h2>
-
       <div class="product recommendations__product recommendations__product--regular">
         <div class="product__picture">
           <picture>
@@ -348,7 +395,7 @@
               width="130"
               src="./public/img/content-products/recommendations/paper.jpg"
               srcset="./public/img/content-products/recommendations/paper@2x.jpg 2x"
-              alt="Бумага для печати">
+              alt="">
           </picture>
         </div>
         <a class="product__link" href="#">
@@ -369,77 +416,83 @@
               width="130"
               src="./public/img/content-products/recommendations/medical-mask.jpg"
               srcset="./public/img/content-products/recommendations/medical-mask@2x.jpg 2x"
-              alt="Бумага для печати">
+              alt="">
           </picture>
-          <span class="product__label-text">Хит</span>
-          <svg class="product__label"  width="55" height="54" fill="none">
-            <use xlink:href="#icon-label"></use>
-          </svg>
         </div>
         <a class="product__link" href="#">
-          <p class="product__text">Маски, распираторы</p>
-        </a>
-      </div>
-
-      <div class="product recommendations__product recommendations__product--new">
-        <a class="product__link" href="#">
-          <div class="product__picture product__picture--new">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="./public/img/content-products/recommendations/thermometer.webp, ./public/img/content-products/recommendations/thermometer@2x.webp 2x"
-              >
-              <img
-                class="product__image"
-                height="130"
-                width="130"
-                src="./public/img/content-products/recommendations/thermometer.jpg"
-                srcset="./public/img/content-products/recommendations/thermometer@2x.jpg 2x"
-                alt="Бумага для печати">
-            </picture>
-            <span class="product__label-text">New</span>
-            <svg class="product__label"  width="55" height="54" fill="none">
-              <use xlink:href="#icon-label"></use>
-            </svg>
-          </div>
-          <p class="product__text">Бесконтактные термометры</p>
-        </a>
-      </div>
-
-      <div class="product recommendations__product recommendations__product--popular">
-        <a class="product__link" href="#">
-          <div class="product__picture product__picture--popular">
-            <picture>
-              <source
-                type="image/webp"
-                srcset="public/img/content-products/recommendations/recirculator.webp, ./public/img/content-products/recommendations/recirculator@2x.webp 2x"
-              >
-              <img
-                class="product__image"
-                height="130"
-                width="130"
-                src="./public/img/content-products/recommendations/recirculator.jpg"
-                srcset="./public/img/content-products/recommendations/recirculator@2x.jpg 2x"
-                alt="Бумага для печати"
-              >
-            </picture>
+          <p class="product__text">
+            Маски, распираторы
             <span class="product__label-text">Хит</span>
             <svg class="product__label"  width="55" height="54" fill="none">
               <use xlink:href="#icon-label"></use>
             </svg>
-          </div>
-          <p class="product__text">Бактерицидный рециркулятор</p>
+          </p>
+        </a>
+      </div>
+
+      <div class="product recommendations__product recommendations__product--new">
+        <div class="product__picture product__picture--new">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./public/img/content-products/recommendations/thermometer.webp, ./public/img/content-products/recommendations/thermometer@2x.webp 2x"
+            >
+            <img
+              class="product__image"
+              height="130"
+              width="130"
+              src="./public/img/content-products/recommendations/thermometer.jpg"
+              srcset="./public/img/content-products/recommendations/thermometer@2x.jpg 2x"
+              alt="">
+          </picture>
+        </div>
+        <a class="product__link" href="#">
+          <p class="product__text">
+            Бесконтактные термометры
+            <span class="product__label-text">New</span>
+            <svg class="product__label"  width="55" height="54" fill="none">
+              <use xlink:href="#icon-label"></use>
+            </svg>
+          </p>
+        </a>
+      </div>
+
+      <div class="product recommendations__product recommendations__product--new">
+        <div class="product__picture product__picture--popular">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="public/img/content-products/recommendations/recirculator.webp, ./public/img/content-products/recommendations/recirculator@2x.webp 2x"
+            >
+            <img
+              class="product__image"
+              height="130"
+              width="130"
+              src="./public/img/content-products/recommendations/recirculator.jpg"
+              srcset="./public/img/content-products/recommendations/recirculator@2x.jpg 2x"
+              alt=""
+            >
+          </picture>
+        </div>
+        <a class="product__link" href="#">
+          <p class="product__text">
+            <span class="product__label-text">New</span>
+            <svg class="product__label"  width="55" height="54" fill="none">
+              <use xlink:href="#icon-label"></use>
+            </svg>
+            Бактерицидный рециркулятор
+          </p>
         </a>
       </div>
     </article>
 
-    <article class="wrapper catalog main__catalog">
-      <h2 class="content-title catalog__title">Каталог</h2>
+    <div class="main__shadow-background">
+      <article class="wrapper catalog main__catalog">
+        <h2 class="content-title catalog__title">Каталог</h2>
 
-      <div class="catalog__products">
-        <div class="product catalog__product product--shadow">
-          <a class="product__link" href="#">
-            <div class="product__picture product__picture--popular">
+        <div class="catalog__products">
+          <div class="product catalog__product catalog__product--new product--shadow">
+            <div class="product__picture">
               <picture>
                 <source
                   type="image/webp"
@@ -451,20 +504,22 @@
                   width="130"
                   src="./public/img/content-products/catalog/cutlery.jpg"
                   srcset="./public/img/content-products/catalog/cutlery@2x.jpg 2x"
-                  alt="Бумага для печати">
+                  alt="">
               </picture>
-              <span class="product__label-text">Хит</span>
-              <svg class="product__label"  width="55" height="54" fill="none">
-                <use xlink:href="#icon-label"></use>
-              </svg>
             </div>
-            <p class="product__text">Приборы столовые</p>
-          </a>
-        </div>
+            <a class="product__link" href="#">
+              <p class="product__text">
+                Приборы столовые
+                <span class="product__label-text">New</span>
+                <svg class="product__label"  width="55" height="54" fill="none">
+                  <use xlink:href="#icon-label"></use>
+                </svg>
+              </p>
+            </a>
+          </div>
 
-        <div class="product catalog__product product--shadow">
-          <a class="product__link" href="#">
-            <div class="product__picture product__picture--popular">
+          <div class="product catalog__product catalog__product--new product--shadow">
+            <div class="product__picture">
               <picture>
                 <source
                   type="image/webp"
@@ -476,19 +531,21 @@
                   width="130"
                   src="./public/img/content-products/catalog/t-shirt-w.jpg"
                   srcset="./public/img/content-products/catalog/t-shirt-w@2x.jpg 2x"
-                  alt="Бумага для печати">
+                  alt="">
               </picture>
-              <span class="product__label-text">Хит</span>
-              <svg class="product__label"  width="55" height="54" fill="none">
-                <use xlink:href="#icon-label"></use>
-              </svg>
             </div>
-            <p class="product__text">Женские футболки</p>
-          </a>
-        </div>
+            <a class="product__link" href="#">
+              <p class="product__text">
+                Женские футболки
+                <span class="product__label-text">New</span>
+                <svg class="product__label"  width="55" height="54" fill="none">
+                  <use xlink:href="#icon-label"></use>
+                </svg>
+              </p>
+            </a>
+          </div>
 
-        <div class="product catalog__product product--shadow">
-          <a class="product__link" href="#">
+          <div class="product catalog__product product--shadow">
             <div class="product__picture product__picture--popular">
               <picture>
                 <source
@@ -501,19 +558,15 @@
                   width="130"
                   src="./public/img/content-products/catalog/t-shirt-m.jpg"
                   srcset="./public/img/content-products/catalog/t-shirt-m@2x.jpg 2x"
-                  alt="Бумага для печати">
+                  alt="">
               </picture>
-              <span class="product__label-text">Хит</span>
-              <svg class="product__label"  width="55" height="54" fill="none">
-                <use xlink:href="#icon-label"></use>
-              </svg>
             </div>
-            <p class="product__text">Мужские футболки</p>
-          </a>
-        </div>
+            <a class="product__link" href="#">
+              <p class="product__text">Мужские футболки</p>
+            </a>
+          </div>
 
-        <div class="product catalog__product product--shadow">
-          <a class="product__link" href="#">
+          <div class="product catalog__product product--shadow">
             <div class="product__picture product__picture--popular">
               <picture>
                 <source
@@ -526,19 +579,15 @@
                   width="130"
                   src="./public/img/content-products/catalog/kids.jpg"
                   srcset="./public/img/content-products/catalog/kids@2x.jpg 2x"
-                  alt="Бумага для печати">
+                  alt="">
               </picture>
-              <span class="product__label-text">Хит</span>
-              <svg class="product__label"  width="55" height="54" fill="none">
-                <use xlink:href="#icon-label"></use>
-              </svg>
             </div>
-            <p class="product__text">Детские игрушки</p>
-          </a>
-        </div>
+            <a class="product__link" href="#">
+              <p class="product__text">Детские игрушки</p>
+            </a>
+          </div>
 
-        <div class="product catalog__product product--shadow">
-          <a class="product__link" href="#">
+          <div class="product catalog__product product--shadow">
             <div class="product__picture product__picture--popular">
               <picture>
                 <source
@@ -551,19 +600,15 @@
                   width="130"
                   src="./public/img/content-products/catalog/cleaning-gloves.jpg"
                   srcset="./public/img/content-products/catalog/cleaning-gloves@2x.jpg 2x"
-                  alt="Бумага для печати">
+                  alt="">
               </picture>
-              <span class="product__label-text">Хит</span>
-              <svg class="product__label"  width="55" height="54" fill="none">
-                <use xlink:href="#icon-label"></use>
-              </svg>
             </div>
-            <p class="product__text">Перчатки резиновые</p>
-          </a>
-        </div>
+            <a class="product__link" href="#">
+              <p class="product__text">Перчатки резиновые</p>
+            </a>
+          </div>
 
-        <div class="product catalog__product product--shadow">
-          <a class="product__link" href="#">
+          <div class="product catalog__product catalog__product--popular product--shadow">
             <div class="product__picture product__picture--popular">
               <picture>
                 <source
@@ -576,19 +621,22 @@
                   width="130"
                   src="./public/img/content-products/catalog/t-shirt-k.jpg"
                   srcset="./public/img/content-products/catalog/t-shirt-k@2x.jpg 2x"
-                  alt="Бумага для печати">
+                  alt="">
               </picture>
-              <span class="product__label-text">Хит</span>
-              <svg class="product__label"  width="55" height="54" fill="none">
-                <use xlink:href="#icon-label"></use>
-              </svg>
-            </div>
-            <p class="product__text">Детские футболки</p>
-          </a>
-        </div>
 
-        <div class="product catalog__product product--shadow">
-          <a class="product__link" href="#">
+            </div>
+            <a class="product__link" href="#">
+              <p class="product__text">
+                Детские футболки
+                <span class="product__label-text">Хит</span>
+                <svg class="product__label"  width="55" height="54" fill="none">
+                  <use xlink:href="#icon-label"></use>
+                </svg>
+              </p>
+            </a>
+          </div>
+
+          <div class="product catalog__product product--shadow">
             <div class="product__picture product__picture--new">
               <picture>
                 <source
@@ -601,19 +649,15 @@
                   width="130"
                   src="./public/img/content-products/catalog/dry-cleaning.jpg"
                   srcset="./public/img/content-products/catalog/dry-cleaning.jpg 2x"
-                  alt="Бумага для печати">
+                  alt="">
               </picture>
-              <span class="product__label-text">New</span>
-              <svg class="product__label"  width="55" height="54" fill="none">
-                <use xlink:href="#icon-label"></use>
-              </svg>
             </div>
-            <p class="product__text">Инвентарь для сухой уборки</p>
-          </a>
-        </div>
+            <a class="product__link" href="#">
+              <p class="product__text">Инвентарь для сухой уборки</p>
+            </a>
+          </div>
 
-        <div class="product catalog__product product--shadow">
-          <a class="product__link" href="#">
+          <div class="product catalog__product product--shadow">
             <div class="product__picture product__picture--new">
               <picture>
                 <source
@@ -626,19 +670,15 @@
                   width="130"
                   src="./public/img/content-products/catalog/dishes.jpg"
                   srcset="./public/img/content-products/catalog/dishes@2x.jpg 2x"
-                  alt="Бумага для печати">
+                  alt="">
               </picture>
-              <span class="product__label-text">New</span>
-              <svg class="product__label"  width="55" height="54" fill="none">
-                <use xlink:href="#icon-label"></use>
-              </svg>
             </div>
-            <p class="product__text">Уборка поверхностей и мытьё посуды</p>
-          </a>
-        </div>
+            <a class="product__link" href="#">
+              <p class="product__text">Уборка поверхностей и мытьё посуды</p>
+            </a>
+          </div>
 
-        <div class="product catalog__product product--shadow">
-          <a class="product__link" href="#">
+          <div class="product catalog__product product--shadow">
             <div class="product__picture product__picture--new">
               <picture>
                 <source
@@ -651,19 +691,15 @@
                   width="130"
                   src="./public/img/content-products/catalog/dry-cleaning.jpg"
                   srcset="./public/img/content-products/catalog/window-cleaning@2x.jpg 2x"
-                  alt="Бумага для печати">
+                  alt="">
               </picture>
-              <span class="product__label-text">New</span>
-              <svg class="product__label"  width="55" height="54" fill="none">
-                <use xlink:href="#icon-label"></use>
-              </svg>
             </div>
-            <p class="product__text">Инвентарь для мытья окон</p>
-          </a>
-        </div>
+            <a class="product__link" href="#">
+              <p class="product__text">Инвентарь для мытья окон</p>
+            </a>
+          </div>
 
-        <div class="product catalog__product product--shadow">
-          <a class="product__link" href="#">
+          <div class="product catalog__product product--shadow">
             <div class="product__picture product__picture--new">
               <picture>
                 <source
@@ -676,19 +712,15 @@
                   width="130"
                   src="./public/img/content-products/catalog/floor.jpg"
                   srcset="./public/img/content-products/catalog/floor@2x.jpg 2x"
-                  alt="Бумага для печати">
+                  alt="">
               </picture>
-              <span class="product__label-text">New</span>
-              <svg class="product__label"  width="55" height="54" fill="none">
-                <use xlink:href="#icon-label"></use>
-              </svg>
             </div>
-            <p class="product__text">Влажная уборка пола</p>
-          </a>
-        </div>
+            <a class="product__link" href="#">
+              <p class="product__text">Влажная уборка пола</p>
+            </a>
+          </div>
 
-        <div class="product catalog__product product--shadow">
-          <a class="product__link" href="#">
+          <div class="product catalog__product catalog__product--popular product--shadow">
             <div class="product__picture product__picture--new">
               <picture>
                 <source
@@ -701,19 +733,21 @@
                   width="130"
                   src="./public/img/content-products/catalog/plastic-lids.jpg"
                   srcset="./public/img/content-products/catalog/plastic-lids@2x.jpg 2x"
-                  alt="Бумага для печати">
+                  alt="">
               </picture>
-              <span class="product__label-text">New</span>
-              <svg class="product__label"  width="55" height="54" fill="none">
-                <use xlink:href="#icon-label"></use>
-              </svg>
             </div>
-            <p class="product__text">Крышки для пластиковых стаканов</p>
-          </a>
-        </div>
+            <a class="product__link" href="#">
+              <p class="product__text">
+                Крышки для пластиковых стаканов
+                <span class="product__label-text">Хит</span>
+                <svg class="product__label"  width="55" height="54" fill="none">
+                  <use xlink:href="#icon-label"></use>
+                </svg>
+              </p>
+            </a>
+          </div>
 
-        <div class="product catalog__product product--shadow">
-          <a class="product__link" href="#">
+          <div class="product catalog__product catalog__product--popular product--shadow">
             <div class="product__picture product__picture--new">
               <picture>
                 <source
@@ -726,64 +760,68 @@
                   width="130"
                   src="./public/img/content-products/catalog/paper-cup.jpg"
                   srcset="./public/img/content-products/catalog/paper-cup@2x.jpg 2x"
-                  alt="Бумага для печати">
+                  alt="">
               </picture>
-              <span class="product__label-text">New</span>
-              <svg class="product__label"  width="55" height="54" fill="none">
-                <use xlink:href="#icon-label"></use>
-              </svg>
             </div>
-            <p class="product__text">Стаканы бумажные</p>
-          </a>
+            <a class="product__link" href="#">
+              <p class="product__text">
+                Стаканы бумажные
+                <span class="product__label-text">Хит</span>
+                <svg class="product__label"  width="55" height="54" fill="none">
+                  <use xlink:href="#icon-label"></use>
+                </svg>
+              </p>
+            </a>
+          </div>
+
         </div>
 
-      </div>
-
-      <button class="info-button catalog__button" type="button">
-        <svg class="catalog__button__icon" width="16" height="16" aria-hidden="true" fill="none">
-          <use xlink:href="#icon-update"></use>
-        </svg>
-        Показать ещё
-      </button>
-    </article>
+        <button class="info-button catalog__button" type="button">
+          <svg class="catalog__button__icon" width="16" height="16" aria-hidden="true" fill="none">
+            <use xlink:href="#icon-update"></use>
+          </svg>
+          Показать ещё
+        </button>
+      </article>
+    </div>
 
     <article class="wrapper features main__features">
       <h2 class="visually-hidden">Преимущества</h2>
 
       <div class="feature features__item">
-        <div class="feature__bg">
+        <div class="feature__background">
           <svg class="feature__icon" width="30" height="30" aria-hidden="true">
             <use xlink:href="#icon-sale"></use>
           </svg>
         </div>
-        <p class="features__text">Скидка постоянным клиентам</p>
+        <p class="feature__text">Скидка постоянным клиентам</p>
       </div>
 
       <div class="feature features__item">
-        <div class="feature__bg">
+        <div class="feature__background">
           <svg class="feature__icon" width="30" height="30" aria-hidden="true">
             <use xlink:href="#icon-certificate"></use>
           </svg>
         </div>
-        <p class="features__text">Весь товар сертифицирован</p>
+        <p class="feature__text">Весь товар сертифицирован</p>
       </div>
 
       <div class="feature features__item">
-        <div class="feature__bg">
+        <div class="feature__background">
           <svg class="feature__icon" width="30" height="30" aria-hidden="true">
             <use xlink:href="#icon-calendar"></use>
           </svg>
         </div>
-        <p class="features__text">14 дней на обмен и возврат</p>
+        <p class="feature__text">14 дней на обмен и возврат</p>
       </div>
 
       <div class="feature features__item">
-        <div class="feature__bg">
+        <div class="feature__background">
           <svg class="feature__icon" width="30" height="30" aria-hidden="true">
             <use xlink:href="#icon-delivery"></use>
           </svg>
         </div>
-        <p class="features__text">Удобная и быстрая доставка</p>
+        <p class="feature__text">Удобная и быстрая доставка</p>
       </div>
     </article>
 
@@ -805,7 +843,7 @@
                 width="130"
                 src="./public/img/content-products/popular/drink-stirrer.jpg"
                 srcset="./public/img/content-products/popular/drink-stirrer@2x.jpg 2x"
-                alt="Бумага для печати">
+                alt="">
             </picture>
             <span class="product__label-text">Хит</span>
             <svg class="product__label"  width="55" height="54" fill="none">
@@ -838,7 +876,7 @@
               <p class="visually-hidden">Рейтинг: 4</p>
             </div>
             <p class="product__price">90 руб./упак</p>
-            <p class="product__description">Деревянные мешалки 14 см (500 шт/упак)</p>
+            <p class="product__description">Деревянные мешалки 14см (500 шт/упак)</p>
           </a>
 
           <div class="product__buttons">
@@ -855,17 +893,17 @@
         <div class="product popular__product product--shadow">
           <div class="product__picture product__picture--popular">
             <picture>
-              <source
+            <!--  <source
                 type="image/webp"
                 srcset="./public/img/content-products/popular/drink-stirrer.webp, ./public/img/content-products/popular/drink-stirrer@2x.webp 2x"
-              >
+              >-->
               <img
                 class="product__image product__image--border"
                 height="130"
                 width="130"
                 src="./public/img/content-products/popular/drink-stirrer.jpg"
                 srcset="./public/img/content-products/popular/drink-stirrer@2x.jpg 2x"
-                alt="Бумага для печати">
+                alt="">
             </picture>
             <span class="product__label-text">Хит</span>
             <svg class="product__label"  width="55" height="54" fill="none">
@@ -912,17 +950,17 @@
         <div class="product popular__product product--shadow">
           <div class="product__picture product__picture--popular">
             <picture>
-              <source
-                type="image/webp"
-                srcset="./public/img/content-products/popular/drink-stirrer.webp, ./public/img/content-products/popular/drink-stirrer@2x.webp 2x"
-              >
+<!--              <source-->
+<!--                type="image/webp"-->
+<!--                srcset="./public/img/content-products/popular/drink-stirrer.webp, ./public/img/content-products/popular/drink-stirrer@2x.webp 2x"-->
+<!--              >-->
               <img
                 class="product__image product__image--border"
                 height="130"
                 width="130"
                 src="./public/img/content-products/popular/drink-stirrer.jpg"
                 srcset="./public/img/content-products/popular/drink-stirrer@2x.jpg 2x"
-                alt="Бумага для печати">
+                alt="">
             </picture>
             <span class="product__label-text">Хит</span>
             <svg class="product__label"  width="55" height="54" fill="none">
@@ -969,17 +1007,17 @@
         <div class="product popular__product product--shadow">
           <div class="product__picture product__picture--popular">
             <picture>
-              <source
-                type="image/webp"
-                srcset="./public/img/content-products/popular/drink-stirrer.webp, ./public/img/content-products/popular/drink-stirrer@2x.webp 2x"
-              >
+<!--              <source-->
+<!--                type="image/webp"-->
+<!--                srcset="./public/img/content-products/popular/drink-stirrer.webp, ./public/img/content-products/popular/drink-stirrer@2x.webp 2x"-->
+<!--              >-->
               <img
                 class="product__image product__image--border"
                 height="130"
                 width="130"
                 src="./public/img/content-products/popular/drink-stirrer.jpg"
                 srcset="./public/img/content-products/popular/drink-stirrer@2x.jpg 2x"
-                alt="Бумага для печати">
+                alt="">
             </picture>
             <span class="product__label-text">Хит</span>
             <svg class="product__label"  width="55" height="54" fill="none">
@@ -1027,24 +1065,32 @@
 
     </article>
 
-    <article class="wrapper about main__about">
-      <h2 class="content-title about__title">О компании</h2>
-      <p class="about__text">
-        Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности в
-        значительной степени обуславливает создание новых предложений. С другой стороны рамки и место обучения кадров
-        играет важную роль в формировании существенных финансовых и административных условий. Задача организации,
-        в особенности же реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие
-        в формировании соответствующий условий активизации.
-      </p>
-      <p class="about__text">
-        Задача организации, в особенности же новая модель организационной деятельности требуют определения
-        и уточнения форм развития. С другой стороны дальнейшее развитие различных форм деятельности влечет
-        за собой процесс внедрения и модернизации соответствующий условий активизации. Товарищи! дальнейшее
-        развитие различных форм деятельности позволяет оценить значение направлений прогрессивного развития.
-      </p>
+    <div class="main__shadow-background">
+      <article class="wrapper about main__about">
+        <div class="about__text-wrapper">
+          <h2 class="content-title about__title">О компании</h2>
+          <p class="about__text">
+            Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности в
+            значительной степени обуславливает создание новых предложений. С другой стороны рамки и место обучения кадров
+            играет важную роль в формировании существенных финансовых и административных условий. Задача организации,
+            в особенности же реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие
+            в формировании соответствующий условий активизации.
+          </p>
+          <p class="about__text">
+            Задача организации, в особенности же новая модель организационной деятельности требуют определения
+            и уточнения форм развития. С другой стороны дальнейшее развитие различных форм деятельности влечет
+            за собой процесс внедрения и модернизации соответствующий условий активизации. Товарищи! Дальнейшее
+            развитие различных форм деятельности позволяет оценить значение направлений прогрессивного развития.
+          </p>
+          <a class="info-button about__button" href="#">Подробнее о компании</a>
+        </div>
 
-      <a class="info-button about__button" href="#">Подробнее о компании</a>
+        <div class="about__image-wrapper">
+          <img class="about__image" width="649" height="626" alt="" src="./public/img/content/about.jpg" srcset="./public/img/content/about@2x.jpg">
+        </div>
+
     </article>
+    </div>
 
     <article class="wrapper faq main__faq">
       <h2 class="content-title faq__title">Часто задаваемые вопросы</h2>
@@ -1089,29 +1135,46 @@
 
     <article class="wrapper feedback main__feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <p class="content-title feedback__title">Остались вопросы?</p>
+      <div class="feedback__wrapper">
+        <p class="feedback__title">Остались вопросы?</p>
 
-      <p class="feedback__text">
-        Звоните по телефону <a class="feedback__phone" href="tel:">+7 911 293 94 85</a> или оставьте заявку на сайте, чтобы получить
-        бесплатную консультацию от нашего менеджера! <br> Мы работаем круглосуточно!
-      </p>
+        <p class="feedback__text">
+          Звоните по телефону <a class="feedback__phone" href="tel:+79112939485">+7&nbsp;911&nbsp;293&nbsp;94&nbsp;85</a> <br>или оставьте заявку на сайте, чтобы получить
+          бесплатную консультацию от нашего менеджера! <br> Мы работаем круглосуточно!
+        </p>
 
-      <form class="contact-form feedback__contact-form">
-        <label class="contact-form__label">Ваше имя
-          <input class="contact-form__input" id="name" name="name" type="text" placeholder="Александр">
-        </label>
+        <form class="contact-form feedback__contact-form" method="post">
+          <label class="contact-form__label">Ваше имя
+            <input class="contact-form__input" id="name" name="name" type="text" placeholder="Александр" autocomplete="off" required >
+          </label>
 
-        <label class="contact-form__label" for="phone">Телефон
-          <input class="contact-form__input" id="phone" name="phone" type="number" placeholder="+7">
-        </label>
+          <label class="contact-form__label" for="phone">Телефон
+            <input class="contact-form__input" id="phone" name="phone" type="text" placeholder="+7" required autocomplete="off">
+          </label>
 
-        <button class="info-button contact-form__button" type="submit">Отправить</button>
-        <p class="contact-form__text">Нажимая «Отправить» вы соглашаетесь с Политикой конфиденциальности и Правилами обработки персональных данных</p>
-      </form>
+          <button class="info-button contact-form__button" type="submit">Отправить</button>
+          <p class="contact-form__text">Нажимая «Отправить» вы соглашаетесь с Политикой конфиденциальности и Правилами обработки персональных данных</p>
+        </form>
+      </div>
+
+      <div class="feedback__image-wrapper">
+        <picture>
+          <img class="feedback__image" width="832" height="555" alt="" src="./public/img/content/man.png" srcset="./public/img/content/man@2x.png"/>
+        </picture>
+      </div>
     </article>
   </main>
 
   <footer class="footer page__footer">
+    <div class="wrapper footer__button-wrapper">
+      <button class="footer__button-up">
+        <svg width="20" height="20" aria-hidden="true">
+          <use xlink:href="#icon-arrow-up"></use>
+        </svg>
+        <span class="visually-hidden">Перейти к началу страницы</span>
+      </button>
+    </div>
+
 
     <div class="wrapper footer__wrapper">
       <div class="info footer__info">
@@ -1125,33 +1188,21 @@
         <div class="info__details">
           <p class="info__copyright">2023 © «Интернет-магазин "<span class="info__copyright--capitalize">Page</span>"»</p>
           <div class="info__payments">
-            <!--          <div class="info__payment">-->
             <svg class="info__payment-icon" width="38" height="22" aria-hidden="true">
               <use xlink:href="#icon-mastercard"></use>
             </svg>
-            <!--          </div>-->
-            <!--          <div>-->
             <svg class="info__payment-icon" width="38" height="22" aria-hidden="true">
               <use xlink:href="#icon-visa"></use>
             </svg>
-            <!--          </div>-->
-            <!--          <div>-->
             <svg class="info__payment-icon" width="38" height="22" aria-hidden="true">
               <use xlink:href="#icon-yandex-money"></use>
             </svg>
-            <!--          </div>-->
-            <!--          <div>-->
             <svg class="info__payment-icon" width="16" height="22" aria-hidden="true">
               <use xlink:href="#icon-webmoney"></use>
             </svg>
-            <!--          </div>-->
-
-            <!--          <div>-->
             <svg class="info__payment-icon" width="38" height="22" aria-hidden="true">
               <use xlink:href="#icon-qiwi"></use>
             </svg>
-            <!--          </div>-->
-
           </div>
         </div>
       </div>
@@ -1188,7 +1239,6 @@
           </ul>
         </section>
 
-
         <section class="footer-nav__section">
           <h3 class="footer-title footer-nav__title">Помощь</h3>
           <ul class="footer-nav__list">
@@ -1206,21 +1256,19 @@
         <h3 class="footer-title contacts__title">Контакты</h3>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <div class="contact__background">
+            <div class="contact__icon-background">
               <svg class="contact__icon" width="20" height="20" fill="none" aria-hidden="true">
                 <use xlink:href="#icon-phone"></use>
               </svg>
             </div>
-            <!--          <img class="contacts__icon" width="45" height="45" alt="" src="">-->
             <span class="contacts__text">+7 911 293 94 85</span>
           </li>
           <li class="contacts__item">
-            <div class="contact__background">
+            <div class="contact__icon-background">
               <svg class="contact__icon" width="20" height="20" fill="none" aria-hidden="true">
                 <use xlink:href="#icon-location"></use>
               </svg>
             </div>
-            <!--          <img class="contacts__icon" width="45" height="45" alt="" src="">-->
             <span class="contacts__text">Санкт-Петербург, <br>ул. Ладожский проспект, д. 10</span>
           </li>
         </ul>
@@ -1232,7 +1280,6 @@
               <svg class="contact__icon" width="20" height="20" fill="none" aria-hidden="true">
                 <use xlink:href="#icon-vk"></use>
               </svg>
-              <!--            <img class="contacts__icon" width="45" height="45" alt="" src="">-->
               <span class="visually-hidden">Vk</span>
             </a>
           </li>
@@ -1241,7 +1288,6 @@
               <svg class="contact__icon" width="20" height="20" fill="none" aria-hidden="true">
                 <use xlink:href="#icon-instagram"></use>
               </svg>
-              <!--            <img class="contacts__icon" width="45" height="45" alt="" src="">-->
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
@@ -1250,7 +1296,6 @@
               <svg class="contact__icon" width="20" height="20" fill="none" aria-hidden="true">
                 <use xlink:href="#icon-youtube"></use>
               </svg>
-              <!--            <img class="contacts__icon" width="45" height="45" alt="" src="">-->
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
@@ -1260,7 +1305,6 @@
     </div>
 
 
-<!--    <hr class="footer__separator">-->
 
     <div class="wrapper footer__texts">
       <p class="footer__text">
@@ -1271,6 +1315,32 @@
       </p>
     </div>
   </footer>
+
+
+  <template id="popup">
+    <div class="popup__overlay">
+      <div class="popup__wrapper">
+        <button class="popup__close-button">
+          <svg width="20" height="20" aria-hidden="true">
+            <use xlink:href="#icon-close"></use>
+          </svg>
+          <span class="visually-hidden">Закрыть форму</span>
+        </button>
+        <p class="popup__title">Заказать звонок</p>
+        <p class="popup__text">Чтобы заказать звонок, заполните поля формы и наш менеджер перезвонит вам в течение 15 минут!</p>
+        <form class="contact-form contact-form--column popup__form">
+          <label class="visually-hidden" for="popup-name">Имя</label>
+          <input class="contact-form__input" id="popup-name" type="text" placeholder="Ваше имя" name="name" autocomplete="off">
+
+          <label class="visually-hidden" for="popup-phone">Телефон</label>
+          <input class="contact-form__input" id="popup-phone" type="number" placeholder="Ваше телефон*" name="phone" autocomplete="off" required>
+
+          <button class="info-button contact-form__button" type="submit">Перезвонить мне</button>
+        </form>
+      </div>
+
+    </div>
+  </template>
 
 </body>
 </html>
