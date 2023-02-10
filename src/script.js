@@ -65,11 +65,9 @@ popupCloseButton.addEventListener('click', () => {
   popupNameInput.value = '';
 });
 
-
 toUpButton.addEventListener('click', () => {
   window.scrollTo({top: 0, behavior: 'smooth'});
 });
-
 
 contactNameInput.addEventListener('input', (evt) => {
   if (evt.target.value.trim() === '' || !evt.target.value.match('[A-Za-zА-Яа-яЁё]')) {
@@ -82,8 +80,7 @@ contactNameInput.addEventListener('input', (evt) => {
     evt.target.setCustomValidity('');
     evt.target.classList.remove('contact-form__input--invalid');
   }
-});
-
+})
 
 contactPhoneInput.addEventListener('input', (evt) => {
   if (!evt.target.value.match('^((\\+7|7|8)+([0-9]){10})$')) {
@@ -95,11 +92,68 @@ contactPhoneInput.addEventListener('input', (evt) => {
   }
  });
 
-
-
 contactForm.addEventListener('submit', (evt) => {
   evt.preventDefault();
 
   contactNameInput.value = '';
   contactPhoneInput.value = '';
 });
+
+const sliderButtons = document.querySelectorAll('.banner__slider-arrow');
+
+let slideIndex = 1;
+
+const slides = document.querySelectorAll('.banner__slide');
+const dotButtons= document.querySelectorAll('.banner__slider-button');
+
+
+const showSlide = () => {
+  slides.forEach((slide) => {
+    slide.style.display = 'none';
+  });
+
+  dotButtons.forEach((button) => {
+    button.classList.remove('banner__slider-button--active');
+  });
+
+  slides[slideIndex - 1].style.display = 'grid';
+  dotButtons[slideIndex - 1].classList.add('banner__slider-button--active');
+};
+
+showSlide();
+
+
+const slideButtonClickHandler = (evt) => {
+  switch (evt.currentTarget.dataset.slide) {
+    case 'more':
+      if (slideIndex + 1 > slides.length) {
+        slideIndex = 1;
+      } else {
+        slideIndex += 1;
+      }
+      break;
+    case 'less':
+      if (slideIndex - 1 < 1) {
+        slideIndex = slides.length;
+      } else {
+        slideIndex -= 1;
+      }
+      break;
+  }
+  showSlide();
+};
+
+const dotButtonClickHandler = (evt) => {
+  slideIndex = Number(evt.currentTarget.dataset.slide);
+  showSlide();
+}
+
+sliderButtons.forEach((button) => {
+  button.addEventListener('click', slideButtonClickHandler);
+});
+
+dotButtons.forEach((button) => {
+  button.addEventListener('click', dotButtonClickHandler)
+});
+
+

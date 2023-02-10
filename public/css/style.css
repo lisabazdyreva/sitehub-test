@@ -132,11 +132,8 @@
   display: none;
 }
 
-.banner__slider-arrow:first-child {
-  display: none;
-}
-
-.banner__slider-arrow:last-child {
+.banner__container .banner__slider-arrow--left,
+.banner__container .banner__slider-arrow--right {
   display: none;
 }
 
@@ -471,20 +468,16 @@
   margin-top: 25px;
 }
 
-.banner__image-container {
+.banner__container {
   background-image: url(../img/bg-banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   border-radius: 15px;
 }
 
-.banner__slider-arrow {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
+.banner__slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .banner__title {
@@ -508,6 +501,21 @@
   margin-bottom: 10px;
   font-size: 12px;
   margin-left: 5px;
+}
+
+.banner__slider-arrow {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.banner__slider-buttons .banner__slider-arrow--left {
+  margin-right: 20px;
+}
+
+.banner__slider-buttons .banner__slider-arrow--right {
+  margin-left: 20px;
 }
 
 .banner__button {
@@ -1454,18 +1462,27 @@
     banner
   */
 
-  .banner__image-container {
-    grid-template-columns: 55px 1fr 1fr 55px;
+  .banner__container {
+    display: grid;
+    grid-template-columns: 55px 1fr 55px;
   }
 
-  .banner__slider-arrow:first-child {
+  .banner__container .banner__slider-arrow--left {
     display: block;
     margin-left: 25px;
   }
 
-  .banner__slider-arrow:last-child {
+  .banner__container .banner__slider-arrow--right {
     display: block;
     margin-right: 25px;
+  }
+
+  .banner__slider-buttons .banner__slider-arrow--left {
+    display: none;
+  }
+
+  .banner__slider-buttons .banner__slider-arrow--right {
+    display: none;
   }
 
   /*
@@ -2268,9 +2285,12 @@
     max-width: 1600px;
   }
 
-  .banner__image-container {
-    grid-template-columns: 55px 1.5fr 1fr 55px;
+  .banner__container {
     height: 450px;
+  }
+
+  .banner__slide {
+    grid-template-columns: 1.5fr 1fr;
   }
 
   .banner__title {
